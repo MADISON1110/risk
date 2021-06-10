@@ -2688,18 +2688,18 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
-local Text = [[ 
-[☽ اهلا بيك في سورس السعودي الاعظم  ☾](t.me/NIU_C)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '⁽𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧₎',url="t.me/AAHMEED11"}}, 
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
+local Text = [[
+𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐢𝐬𝐤, 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '⁽𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧₎',url="t.me/AAHMEED11"}},
 {{text = '⁽𝐭𝐰𝐥 𝐫𝐢𝐬𝐤₎',url="t.me/E_H_S_BOT"}}, 
-{{text = '⁽𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤₎', url="t.me/NIU_C"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+{{text = '⁽𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤₎', url="t.me/NIU_C"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------MADISON---
 if text == 'الالعاب' then
