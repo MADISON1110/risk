@@ -2688,18 +2688,30 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
-local Text = [[ 
-[𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐢𝐬𝐤, 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎](t.me/NIU_C)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"}}, 
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤',url="t.me/NIU_C"}}, 
-{{text = 'اضف البوت لمجموعتك', url="https://t.me/M_A_DD_BOT?startgroup=new"}},  
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
+local Text =[[
+𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐨𝐠𝐞𝐧, 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 
+𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞
+𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎](t.me/NIU_C)
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝐔𝐬𝐞𝐫 𝐑𝐨𝐠𝐞𝐧', url = "https://t.me/US_ROGEN"}},
+},
+{
+{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧⁦', url = "https://t.me/AAHMEED11"},{text = '𝐃𝐞𝐯 𝐄𝐥𝐤𝐚𝐛𝐨𝐬', url = "https://t.me/G_W_P"},
+},
+{
+{text = '𝐃𝐞𝐯 𝐊𝐚𝐦𝐚𝐥⁦', url = "https://t.me/G_X_W"},{text = '𝐃𝐞𝐯 𝐌𝐚𝐫𝐭𝐞𝐧', url = "https://t.me/I_C_X"},
+},
+{
+{text = '⁽𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐨𝐠𝐞𝐧₎', url = "https://t.me/SO_ROGEN"}},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROGEN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------MADISON---
 if text == 'الالعاب' then
