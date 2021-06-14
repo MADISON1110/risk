@@ -2690,13 +2690,13 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' then  
 local Text = [[  
-[𓆩✶𓆪 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐢𝐬𝐤, 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𖡨 𓆩✶𓆪 ](t.me/NIU_C)
+كسم هيفين عشن ماديسون
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"}},  
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤',url="t.me/NIU_C"}},
-  {{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/M_A_DD_BOT?startgroup=start"}},
+{{text = 'ماديسون',url="t.me/AAHMEED11"}},  
+{{text = 'هيفين',url="t.me/AAHMEED11"}},  
+{{text = 'سورس خولات', url="t.me/NIU_C"}},  
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -11260,7 +11260,7 @@ local List = {
 ¦• 𝚄𝚂𝙴𝚁  ⇉⁞ #username ↝🇪🇬.
 ¦• 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  ↝ 🇪🇬.
 ¦• 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  ↝🇪🇬.
-¦• 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  ↝🇪🇬.
+¦• 𝙸𝙳 𝚂𝚃?? ⇉ #id  ↝🇪🇬.
 ¦• 𝗖𝗛 - @NIU_C 🦅.
 ]],
 [[
