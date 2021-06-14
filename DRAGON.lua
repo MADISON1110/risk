@@ -2690,18 +2690,16 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' then  
 local Text = [[  
-𓆩✶𓆪 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐬𝐲𝐫𝐢𝐚, 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𖡨 𓆩✶𓆪
+[𓆩✶𓆪 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐢𝐬𝐤, 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𖡨 𓆩✶𓆪 ](t.me/NIU_C)
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '𝐃𝐄𝐕 𝐒𝐈𝐑𝐈𝐀𖢷',url="t.me/siria22"}},  
-{{text = '𝐃𝐄𝐕 𝐎𝐑𝐀𝐏𝐈𖤍',url="t.me/DEV_ORABI"}},
-  {{text = '𝐃𝐄𝐕 𝐀𝐌𝐎𝐑𝐘',url="t.me/Dv_69"}},
-{{text = '˹ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐈𝐑𝐈𝐀ا', url="t.me/SOURCE_SYRIA"}},  
-  {{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/SY_RI_Abot?startgroup=start"}},
+{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11}},  
+{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤',url="t.me/NIU_C"}},
+  {{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/M_A_DD_BOT?startgroup=start"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SOURCE_SYRIA&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 --------MADISON---
 if text == 'الالعاب' then
@@ -11701,7 +11699,7 @@ Msᴀɢ ~ #msgs
 🇪🇬≪💎≫ #username • メ
 🇪🇬≪💎≫ #stast  •メ
 🇪🇬≪💎≫ #id  • メ
-🇪🇬≪??≫ #msgs  •メ
+🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
 🇪🇬𝗖𝗛 - @NIU_C 🦅
 ]],
