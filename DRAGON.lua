@@ -2688,20 +2688,25 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' then  
-local Text = [[  
-𓆩✶𓆪 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐢𝐬𝐤, 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𖡨 𓆩✶𓆪
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"}},  
-{{text = '𝐃𝐞𝐯 𝐇𝐚𝐢𝐯𝐞𝐞𝐧',url="t.me/H_I_v_e_e_n101"}},
-{{text = '𝐓𝐰𝐥 𝐑𝐢𝐬𝐤',url="t.me/E_H_M_BOT"}},
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤', url="t.me/NIU_C"}},  
-  {{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/M_A_DD_BOT?startgroup=start"}},
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
+local Text =[[
+[𓆩✶𓆪 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐫𝐢𝐬𝐤, 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𖡨 𓆩✶𓆪 ](t.me/NIU_C) 
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧', url = "https://t.me/AAHMEED11"},
+},
+{
+{text = '𝐃𝐞𝐯 𝐇𝐚𝐢𝐯𝐞𝐞𝐧', url = "https://t.me/H_I_v_e_e_n101"},
+},
+{
+{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤', url = "https://t.me/NIU_C"}
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------MADISON---
 if text == 'الالعاب' then
