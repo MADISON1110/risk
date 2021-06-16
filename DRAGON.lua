@@ -2670,19 +2670,20 @@ end
 end,nil)   
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
-local Text = [[ 
-[☽ اهلا بيك في سورس السعودي الاعظم  ☾](t.me/UU_SD1)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '☾ 𝘼𝙇𝙎3𝙒𝘿𝙔 ☽',url="t.me/UU_SD"}}, 
-{{text = '☾ 𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴 ☽',url="t.me/M_S_U"}}, 
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝙎3𝙒𝘿𝙔', url="t.me/UU_SD1"}}, 
-{{text = 'اضف البوت لمجمعتك🦅', url="https://t.me/UU_SD_bot?startgroup=new"}},  
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_SD1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
+local Text = [[
+𓆩✶𓆪 𝐰𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐬𝐨𝐮𝐫𝐜𝐞 𝐕𝐨𝐥𝐭, 𝐭𝐡𝐞 𝐛𝐞𝐬𝐭 𝐬𝐨𝐮𝐫𝐜𝐞 𝐨𝐧 𝐭𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𖡨 𓆩✶𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𝐔𝐬𝐞𝐫 𝐕𝐨𝐥𝐭', url="t.me/US_VOL"}},
+{{text = '𝐃𝐞𝐯 𝐁𝐚𝐧𝐝𝐚',url="t.me/uu_1_p"}},
+{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧', url="t.me/AAHMEED11"}},
+{{text = '𝐃𝐞𝐯 𝐍𝐚𝐝𝐞𝐫', url="t.me/Nader_almarg"}},
+{{text = '𝐒𝐨𝐮𝐫𝐜𝐞 𝐕𝐨𝐥𝐭', url="t.me/SO_VOL"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'نادر' or text == 'نادر المرج' or text == 'زب ماديسون' then
