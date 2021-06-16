@@ -2678,7 +2678,6 @@ keyboard = {}
 keyboard.inline_keyboard = { 
 {{text = '𝐃𝐞𝐯 𝐁𝐚𝐧𝐝𝐚',url="t.me/uu_1_p"}}, 
 {{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"}}, 
-{{text = '𝐃𝐞𝐯 𝐍𝐚𝐝𝐞𝐫',url="t.me/Nader_almarg"}}, 
 {{text = '𝐒𝐨𝐮𝐫𝐜𝐞 𝐕𝐨𝐥𝐭', url="t.me/SO_VOL"}}, 
 {{text = 'اضف البوت لمجموعتك', url="https://t.me/M_A_DD_BOT?startgroup=new"}},  
 } 
