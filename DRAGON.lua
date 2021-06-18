@@ -2748,7 +2748,7 @@ end
 end,nil)   
 end
 
-if text == 'ماديسون' or text == 'مبرمج السورس' then
+if text == 'ماديسون' or text == 'مبرمج السورس' or text == 'المبرمج ماديسون' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع ماديسون مبرمج السورس
@@ -2756,10 +2756,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = ' ༄ 𝐃𝐄𝐕 𝐌𝐀𝐃𝐈𝐒𝐎𝐍 ༄  ',url="t.me/AAHMEED11"}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/hr_ba_1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'هيفين' or text == "مطور السورس" then
+if text == 'هيفين' or text == 'المطور هيفين' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 هيفين مبرمج السورس
@@ -12562,7 +12562,7 @@ Msᴀɢ ~ #msgs
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  @NIU_C ♢
+- 𝗖𝗛 🇪?? ꙰  @NIU_C ♢
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -13020,7 +13020,7 @@ Msᴀɢ ~ #msgs
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝒖𝒔𝒆𝒓𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
-➭- 𝒊𝒅 𓂅 #id 𓍯. 💕
+➭- 𝒊𝒅 ?? #id 𓍯. 💕
 ➭- 𝗖𝗛 - @NIU_C ♢
 ]],
 [[
