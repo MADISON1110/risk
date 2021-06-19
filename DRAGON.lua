@@ -2758,7 +2758,7 @@ keyboard.inline_keyboard = {{{text = ' ❨ 𝐌 𝐀 𝐃 𝐈 𝐒 𝐎 𝐍 �
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'فويكاor text == 'مالك السورس' then
+if text == 'فويكا' or text == 'مالك السورس' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع فوديكا مالك السورس
@@ -12232,7 +12232,7 @@ local List = {
 ♬𝗖𝗛 - @SO_ADR 💞.
 ]],
 [[
- 𝚄𝚂𝙴𝚁 𓄹?? #username
+ 𝚄𝚂𝙴𝚁 ??𓄼 #username
  𝙸𝙳  𓄹𓄼 #id 
  𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
