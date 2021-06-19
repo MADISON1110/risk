@@ -2743,18 +2743,14 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'بويكا الكبير' or text == 'بويكا' or text == 'بويكا اليكس' or text == 'بويكا الكبير' or text == 'بويكا القمد' or text == 'صاحب الابليكيشن' or text == 'مطور السورس'  then
+if text == 'ماديسون' or text == 'احمد' then
+local msg_id = msg.id_/2097152/0.5
 local Text = [[
-المبرمج بويكا لو حابب تتواصل معاه
-اتبع الزر إلى تحت ↓
-
+  مطور سورس الصياد وبوت 𝖒𝖔𝖔𝖓 مشغول الآن يرُجى ترك رسالة نصية له في الخاص ..☏
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '  ❨ 🇪🇬 𝐃𝐄𝐕 𝐁𝐎𝐘𝐊𝐀 🇪🇬  ❩ ',url="t.me/UU_boy"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+keyboard.inline_keyboard = {{{text = '  ༄𝐷𝑒𝑣 𝙼𝙾𝙷𝙰𝙼𝙴𝙳  ',url="t.me/mo1ibrahim"}},}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/hr_ba_1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'بويكا مبرمج السورس'  then
