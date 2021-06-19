@@ -2714,12 +2714,10 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
 local Text = [[ 
-[   ╭━━━━━━❲𝐀𝐃𝐑𝐈𝐀𝐍❳━━━━━━╮
-    
+[   ╭━━━━━❲𝐀𝐃𝐑𝐈𝐀𝐍❳━━━━━╮
     ☞𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐝𝐫𝐢𝐚𝐧 
     ☞ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦
-    
-    ╰━━━━━━❲𝐀𝐃𝐑𝐈𝐀𝐍━━━━━━╯](t.me/SO_ADR)
+    ╰━━━━━❲𝐀𝐃𝐑𝐈𝐀𝐍━━━━━╯](t.me/SO_ADR)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -2747,7 +2745,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'ماديسون' or text == 'ماديسون مبرمج السورس' then
+if text == 'ماديسون' or text == 'مبرمج السورس' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع ماديسون مبرمج السورس
@@ -2758,7 +2756,7 @@ keyboard.inline_keyboard = {{{text = ' ❨ 𝐌 𝐀 𝐃 𝐈 𝐒 𝐎 𝐍 �
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'فويكا' or text == 'مالك السورس' then
+if text == 'فوديكا' or text == 'مالك السورس' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع فوديكا مالك السورس
@@ -2768,7 +2766,7 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text = '  𝐃𝐄𝐕 𝐕𝐎𝐃𝐄𝐊𝐀  ',url="t.me/DV_Vo_Dk_A1"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DV_Vo_Dk_A1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'مينا' or text == 'وزير العظمه' or text == 'الوزير' then
+if text == 'مينا' or text == 'مطور السورس' or text == 'الوزير' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع مينا مطور السورس
@@ -2778,7 +2776,7 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text = '  𝐃𝐄𝐕 𝐄𝐋𝐖𝐀𝐙𝐄𝐑  ',url="t.me/DV_MI_NA2"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DV_MI_NA2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'الصعيدي' or text == 'مطور السورس' then
+if text == 'الصعيدي' or text == 'ااخو فوديكا then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع الصعيدي مطور السورس
@@ -5672,16 +5670,16 @@ end;end,nil)
 return false
 end
 ------------------------------------------------------------------------ adddev2 sudog
-if text == ("رفع صحبي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("رفع مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_DRAGON(extra, result, success)
 database:sadd(bot_id.."Dev:SoFi:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","ღ تم ترقيته مطور في البوت")  
+Reply_Status(msg,result.sender_user_id_,"reply","ღ تم ترقيته مطور ثانوي ف البوت")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^رفع صحبي @(.*)$") and SudoBot(msg) then
-local username = text:match("^رفع صحبي @(.*)$")
+if text and text:match("^رفع مطور ثانوي @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع مطور ثانوي @(.*)$")
 function Function_DRAGON(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
@@ -5697,13 +5695,13 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^رفع صحبي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع صحبي (%d+)$")
+if text and text:match("^رفع مطور ثانوي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع مطور ثانوي (%d+)$")
 database:sadd(bot_id.."Dev:SoFi:2", userid)
 Reply_Status(msg,userid,"reply","ღ تم ترقيته مطور في البوت")  
 return false 
 end
-if text == ("تنزيل صحبي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("تنزيل مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_DRAGON(extra, result, success)
 database:srem(bot_id.."Dev:SoFi:2", result.sender_user_id_)
 Reply_Status(msg,result.sender_user_id_,"reply","ღ تم تنزيله من مطور")  
@@ -5711,8 +5709,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_DRAGON, nil)
 return false 
 end
-if text and text:match("^تنزيل صحبي @(.*)$") and SudoBot(msg) then
-local username = text:match("^تنزيل صحبي @(.*)$")
+if text and text:match("^تنزيل مطور ثانوي @(.*)$") and SudoBot(msg) then
+local username = text:match("^تنزيل مطور ثانوي @(.*)$")
 function Function_DRAGON(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Dev:SoFi:2", result.id_)
@@ -5724,10 +5722,10 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_DRAGON, nil)
 return false
 end  
-if text and text:match("^تنزيل صحبي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^تنزيل صحبي (%d+)$")
+if text and text:match("^تنزيل مطور ثانوي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تنزيل مطور ثانوي (%d+)$")
 database:srem(bot_id.."Dev:SoFi:2", userid)
-Reply_Status(msg,userid,"reply","ღ تم تنزيله من صحبي")  
+Reply_Status(msg,userid,"reply","ღ تم تنزيله من مطور ثانوي")  
 return false 
 end
 if text == ("الثانويين") and SudoBot(msg) then
