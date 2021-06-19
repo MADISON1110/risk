@@ -2703,6 +2703,7 @@ keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐕𝐨𝐝𝐞𝐤𝐚',url="t.me/DV_Vo_Dk_A1"},{text = '𝐃𝐞𝐯 𝐄𝐥𝐰𝐚𝐳𝐞𝐫',url="t.me/DV_MI_NA2"}},
 {{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"},{text = '𝐃𝐞𝐯 𝐏𝐢𝐤𝐚𝐭𝐜𝐡𝐨',url="t.me/DV_PiK_ATC_HO"}},
 {{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐝𝐫𝐢𝐚𝐧', url="t.me/SO_ADR"}},
+{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐝𝐫𝐢𝐚𝐧', url="t.me/SO_ADR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ADR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
