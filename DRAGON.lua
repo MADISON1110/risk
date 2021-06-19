@@ -2699,11 +2699,10 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐃𝐞𝐯 𝐕𝐨𝐝𝐞𝐤𝐚',url="t.me/DV_Vo_Dk_A1"}}, 
-{{text = '𝐃𝐞𝐯 𝐄𝐥𝐰𝐚𝐳𝐞𝐫',url="t.me/DV_MI_NA2"}}, 
-{{text = '𝐃𝐞𝐯 𝐏𝐢𝐤𝐚𝐭𝐜𝐡𝐨',url="t.me/DV_PiK_ATC_HO"}}, 
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐝𝐫𝐢𝐚𝐧', url="t.me/SO_ADR"}}, 
-{{text = 'اضف البوت لمجمعتك🦅', url="https://t.me/MI_NA2_BOT?startgroup=new"}},  
+{{text = '𝐔𝐬𝐞𝐫 𝐀𝐝𝐫𝐢𝐚𝐧', url="t.me/US_ADR"}},
+{{text = '𝐃𝐞𝐯 𝐕𝐨𝐝𝐞𝐤𝐚',url="t.me/DV_Vo_Dk_A1"},{text = '𝐃𝐞𝐯 𝐄𝐥𝐰𝐚𝐳𝐞𝐫',url="t.me/DV_MI_NA2"}},
+{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"},{text = '𝐃𝐞𝐯 𝐏𝐢𝐤𝐚𝐭𝐜𝐡𝐨',url="t.me/DV_PiK_ATC_HO"}},
+{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐝𝐫𝐢𝐚𝐧', url="t.me/SO_ADR"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ADR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10563,18 +10562,9 @@ database:srem(bot_id..'Chek:Groups',msg.chat_id_)
 end
 return false  
 end
-if text == "بوت" or text == 'البوت' then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'مسلم')
-local function getpro(extra, result, success)
-if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," اسمي الكيوت "..Namebot.." 🌝💘 ", msg.id_, msg.id_, "md")
-else
-send(msg.chat_id_, msg.id_,'اسمي الكيوت '..Namebot..' 🌝💘', 1, 'md')
-end
-end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
-end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
+if text == 'بوت' then
+Namebot = (database:get(bot_id..'Name:Bot') or 'اسمي الكيوت ادريان')
+send(msg.chat_id_, msg.id_,' ['..Namebot..'] ')
 end
 if text == 'الاحصائيات' then
 if Sudo(msg) then 
