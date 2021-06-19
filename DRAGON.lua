@@ -2776,7 +2776,7 @@ keyboard = {}
 keyboard.inline_keyboard = {{{text = '  𝐃𝐄𝐕 𝐄𝐋𝐖𝐀𝐙𝐄𝐑  ',url="t.me/DV_MI_NA2"}},}
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DV_MI_NA2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'الصعيدي' or text == 'ااخو فوديكا then
+if text == 'الصعيدي' or text == 'اخو فوديكا' then
 local msg_id = msg.id_/2097152/0.5
 local Text = [[
 للتواصل مع الصعيدي مطور السورس
