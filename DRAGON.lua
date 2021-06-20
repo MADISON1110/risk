@@ -1136,7 +1136,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '  ❨ 𝐊 𝐄 𝐌 𝐎 ♬  ❩  ',url="t.me/K_E_M_O1"}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DV_Vo_Dk_A1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/K_E_M_O1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'قناه السورس' and DevSoFi(msg) then
@@ -2712,21 +2712,21 @@ end
 end
 end,nil)   
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-local msg_id = msg.id_/2097152/0.5
-local Text = [[
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
+local Text = [[ 
 ╔≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╗
 ✰ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐨𝐨𝐳, 
 ✰ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 
 ✰ 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎
 ╚≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╝
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
 {{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/K_E_M_O1"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/I_C_X"}},
-{{text = '  ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽??𝙻𝚂 𖣌 ', url="t.me/SO_ROZ"}},
-{{text = '   ²₀²₁ ˝₀₄˝₁₃ | ₁₂:₀₀ 𝙿𝙼  ', url="t.me/SO_ROZ"}},
-}https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROZ&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+{{text = '  ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌 ', url="t.me/SO_ROZ"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROZ&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -2762,7 +2762,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '  ❨ 𝐊 𝐄 𝐌 𝐎 ♬  ❩  ',url="t.me/K_E_M_O1"}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DV_Vo_Dk_A1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/K_E_M_O1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'مارتن' or text == 'مبرمج السورس' or text == 'بتاع قنا' then
 local msg_id = msg.id_/2097152/0.5
@@ -2772,7 +2772,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '  ❨ 𝐌 𝐀 𝐑 𝐓 𝐄 𝐍 ♬  ❩  ',url="t.me/l_C_X"}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DV_MI_NA2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/l_C_X&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'ووييييي' or text == 'ننينينينين' then
 local msg_id = msg.id_/2097152/0.5
@@ -12727,7 +12727,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗖𝗛 - @SO_ROZ ♬.
 ]],
 [[
-.𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
+.𖣂 𝙪𝙨??𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
