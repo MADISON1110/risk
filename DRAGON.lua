@@ -944,7 +944,7 @@ keyboard = {
 {'ღ═───═𝐑𝐎𝐎𝐙  ═───═ღ'},
 {'اغاني','افلام'},
 {'ღ═───═𝐑𝐎𝐎𝐙  ═───═ღ'},
-{'الالعاب الجديده','روايات'},
+{'العاب','روايات'},
 {'ღ═───═𝐑𝐎𝐎𝐙  ═───═ღ'},
 {'نكته'},
 }
@@ -3187,7 +3187,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'العاب رووز' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
+if text == 'العاب رووز' or text == 'العاب روز' or text == 'العاب متطوره' then  
 local Text = [[  
  ♬ اهلا في قائمه الالعاب المتطوره سورس رووز  ♬ 
 تفضل اختر لعبه من القائمه 
@@ -3219,7 +3219,7 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '  ❨ ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 ♬  ❩ ', url="t.me/SO_ROZ"}},
+{{text = '  ❨ ♬ 𝐒𝐎𝐔𝐑𝐂?? ♬  ❩ ', url="t.me/SO_ROZ"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
@@ -11913,21 +11913,35 @@ send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']')
 return false
 end
 if text == "بوت" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'رووز')
+local msg_id = msg.id_/2097152/0.5
+Namebot = (database:get(bot_id..'Name:Bot') or 'افايره')
 local DRAGON_Msg = {
-'اسمي  '..Namebot..' يا قلبي 🙈💗',
+'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🍭',
-'اسمي  '..Namebot..' يا قمر 🌝🌸',
+'اسمي  '..Namebot..' يعمري🌚🌹',
+'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
 'مقولت اسمي '..Namebot..' في اي 🙄',
-'عيون البوت اسمي '..Namebot..' يعمري🥺❤️',
-'اسمي  '..Namebot..' ياحياتي🥺♥️',
-'اسمي  '..Namebot..' يوتكه🥺❤️',
-'انا '..Namebot..' ينوحي🙀🥺',
+'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي  '..Namebot..' ياحياتي🧸♥️',
+'اسمي  '..Namebot..' يوتكه🙈🍑',
+'انا '..Namebot..' إلى عمرو مهاب كابوس الكلاب 🦇',
 }
-send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
+local Text = [[
+ ]]..DRAGON_Msg[math.random(#DRAGON_Msg)]..[[ 
+ 
+]]
+
+ us = database:get(id_server..":token_username")
+ agwa = database:get(id_server..":SUDO:USERNAME")
+ agwa = agwa:gsub("%@", "")
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '  مطور البوت 𖠕 ',url="t.me/"..agwa}},
+{{text = '  اضف البوت الي مجموعتك 𖠕 ',url="t.me/"..us.."?startgroup=start"}},
+}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..us..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 
@@ -12687,7 +12701,7 @@ Msᴀɢ ~ #msgs
 金 - 𝓼𝓽𝓪𝓼𝓽  . #stast ⸙ 
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
-金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
+金 - 𝓶𝓼??𝓼 . #msgs ⸙
 金 - 𝗖𝗛 - @SO_ROZ 💞.
 ]],
 [[
@@ -13151,7 +13165,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
-• 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
+• ?? | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | ??𝑺?? : #msgs 𓆊
 • 🖤 | 𝗖𝗛 - @SO_ROZ ♬
