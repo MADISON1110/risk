@@ -2780,13 +2780,13 @@ end
 
 
 
-if text == 'السورس' or text == 'سورس' then  
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then  
 local Text = [[  
-• _ _ _ _ _ _ _ ᴀʟғᴀ _ _ _ _ _ _ _ •
-♦️| ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ ᴀʟғᴀ
-• _ _ _ _ _ _ _ ᴀʟғᴀ _ _ _ _ _ _ _ •
-♦️| ᴀʟғᴀ ᴛʜᴇ ʙᴇsᴛ sᴏᴜʀᴄᴇ ᴏɴ ᴛᴇʟᴇ
-• _ _ _ _ _ _ _ ᴀʟғᴀ _ _ _ _ _ _ _ •
+[♢ | 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
+
+[♢ | 𝐀𝐋𝐟𝐚 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐒𝐨𝐮𝐫𝐜𝐞 𝐎𝐧 𝐓𝐞𝐥𝐞](t.me/so_alfaa)
+
+[♢ | 𝐅𝐨𝐥𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐁𝐞𝐥𝐨𝐰](t.me/so_alfaa)
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
@@ -11188,7 +11188,7 @@ if text == 'مين ضافني هنا' then
 if not database:get(bot_id..'Added:Me'..msg.chat_id_) then
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da and da.status_.ID == "ChatMemberStatusCreator" then
-send(msg.chat_id_, msg.id_,' 𖤓 انت منشئ الجروب') 
+send(msg.chat_id_, msg.id_,' ?? انت منشئ الجروب') 
 return false
 end
 local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sender_user_id_)
