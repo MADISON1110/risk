@@ -2714,16 +2714,17 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
 local Text = [[ 
-╔≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╗
+[╔≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╗
 ✰ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐨𝐨𝐳, 
 ✰ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 
 ✰ 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎
-╚≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╝
+╚≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╝](t.me/SO_ADR)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"},{text = '𝐓𝐰𝐥 𝐀𝐝𝐫𝐢𝐚𝐧',url="t.me/E_H_M_BOT"}},
-{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐝𝐫𝐢𝐚𝐧', url="t.me/SO_ADR"}},
+{{text = '𝐃𝐞𝐯 𝐕𝐨𝐝𝐞𝐤𝐚',url="t.me/DV_Vo_Dk_A1"}}, 
+{{text = '𝐃𝐞𝐯 𝐄𝐥𝐰𝐚𝐳𝐞𝐫',url="t.me/DV_MI_NA2"}}, 
+{{text = '𝐃𝐞𝐯 𝐏𝐢𝐤𝐚𝐭𝐜𝐡𝐨',url="t.me/DV_PiK_ATC_HO"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ADR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9298,7 +9299,7 @@ local text =
 ' }\n'..' ღ  الايدي ← { '..idgp..
 ' }\n'..' ღ  الايدي بالصوره ← { '..idph..
 ' }\n'..' ღ  الرفع ← { '..setadd..
-' }\n'..' ღ  الحظر ← { '..banm..' }\n\nღ═───═𝐑𝐎𝐎𝐙  ═───═ღ\n ღ قناة سورس رووز ↓\n [ ♬ 𓆩 𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐎𝐎𝐙   𓆪 ♬](t.me/SO_ROZ) \n'
+' }\n'..' ღ  الحظر ← { '..banm..' }\n\nღ═───═𝐑𝐎𝐎𝐙  ═───═ღ\n ღ قناة سورس رووز ↓\n [ ♬ 𓆩 𝐒𝐎𝐔𝐑𝐂𝐄 ??𝐎𝐎𝐙   𓆪 ♬](t.me/SO_ROZ) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
