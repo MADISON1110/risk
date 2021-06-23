@@ -873,7 +873,7 @@ if DevSoFi(msg) then
 local bl = ' 𖤓 اهلا عزيزي آلمـطـور\n 𖤓 آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n 𖤓 تسـتطـيع‌‏ آلتحگم باوامر البوت\n 𖤓 من خلاال الكيبورت خاص بك\n 𖤓 قناة سورس البوت [اضغط هنا](t.me/so_alfaa)'
 local keyboard = {
 
-{'المبرمج ماديسون'},{'مطورين السورس'},
+{'المبرمج ماديسون'},
 
 {'اضف رد عام','مسح رد عام'},
 
@@ -889,7 +889,7 @@ local keyboard = {
 
 {'الجروبات ','الردود العامه'},
 
-{'بوت تواصل'},
+{'كساحه مبرمج السورس'},
 
 {'اذاعه ','اذاعه خاص '},
 
@@ -897,15 +897,13 @@ local keyboard = {
 
 {'تفعيل البوت الخدمي ','تعطيل البوت الخدمي '},
 
-{'بوت تواصل'},
+{'بندا مبرمج السورس'},
 
 {'تنظيف الجروبات ','تنظيف المشتركين '},
 
-{'جلب نسخه الاحتياطيه'},
+{'جلب نسخه الاحتياطيه','تحديث السورس'},
 
-{'تحديث السورس '},
-
-{'معلومات السيرفر'},
+{'رفع نسخه الاحتياطيه','معلومات السيرفر'},
 
 {'الغاء'},
 
@@ -937,6 +935,18 @@ keyboard = {
 
 
 {'مبرمج السورس','بوت تواصل'},
+
+
+{'•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•'},
+
+
+{'افلام','اغاني'},
+
+
+{'•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•'},
+
+
+{'العاب','روايات'},
 
 
 {'•━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•'},
@@ -11985,33 +11995,33 @@ end
 return false
 end
 local Text =[[
-╭────  [ 𝐚𝐯𝐭𝐚𝐫 ꪝ   ](t.me/so_alfaa)  ────╮
+╭────  [ 『𝙰𝚕𝚏𝚊』  ](t.me/so_alfaa)  ────╮
 
-𖤛 [ مبرمج السورس   ](t.me/so_alfaa) 𖤛
+𖤛 [ مبرمج السورس   ](t.me/AAHMEED11) 𖤛
              
-╰────  [ 𝐚𝐯𝐭𝐚𝐫 ꪝ  ](t.me/so_alfaa)  ────╯
+╰────  [ 『𝙰𝚕𝚏𝚊』 ](t.me/so_alfaa)  ────╯
 
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12187,7 +12197,7 @@ end
 if text == 'بوت حذف' or text == 'رابط حذف' or text == 'رابط الحذف' then
 local Text = [[
 
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 
 بوت حذف حساب 𖤓
 فكر قبل لا تتسرع وتروح
@@ -12295,27 +12305,27 @@ local Teext =[[
 𖤓الجهات
 𖤓 الاشعارات
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12357,30 +12367,30 @@ local Teext =[[
 𖤓الكتم الاسم
 𖤓الزخرفه
 𖤓 ردود البوت
-𖤓 ❺
+𖤓⌯ اوامر التسليه ⌯
 𖤓 صورتي 
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚 ](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = '  ❼  ', callback_data="/help"},
+{text = ' ⌯ تعطيل و تفعيل ⌯ ', callback_data="/help"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12394,7 +12404,7 @@ end
 local Teext =[[
 
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━• 
- ➊ - اضف
+⌯ اوامر الوضع ⌯ - اضف
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
 𖤓اضف / مسح ← رد
 𖤓اضف / مسح ← صلاحيه
@@ -12435,28 +12445,28 @@ local Teext =[[
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
 𖤓 الاوامر المضافه ( لعرض الاوامر المضافه ) 
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚 ](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12543,29 +12553,29 @@ local Teext =[[
 𖤓الساعه
 𖤓التاريخ
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help"},
 
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12578,7 +12588,7 @@ return false
 end
 local Teext =[[
 
-❸ 
+⌯ اوامر المطورين ⌯
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
 𖤓 تفعيل ← تعطيل 
 𖤓المجموعات ← المشتركين ← الاحصائيات
@@ -12643,29 +12653,29 @@ local Teext =[[
 𖤓تفعيل/تعطيل المغادره
 𖤓مسح الجروبات
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
 
-{text = ' ❸  ', callback_data="/help"},
+{text = ' ⌯ اوامر المطورين ⌯ ', callback_data="/help"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12704,27 +12714,27 @@ local Teext =[[
 𖤓شنو رئيك بهاي بالرد
 𖤓تحب هذا
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = '  ❹  ', callback_data="/help"},
+{text = ' ⌯ اوامر الأعضاء ⌯ ', callback_data="/help"},
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12738,7 +12748,7 @@ end
 local Teext =[[
 
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━• 
- ❺ 
+⌯ اوامر التسليه ⌯ 
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━• 
     𖤓 اوامر جديده ومميزه  ↓
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
@@ -12788,27 +12798,27 @@ local Teext =[[
  𖤓 تاك للمتزوجين
  𖤓 مسح المتزوجين
 •━═━═━═『𝙰𝚕𝚏𝚊』═━═━═━•
-[𖤛 قناه السورس 𖤛 ](t.me/so_alfaa)
+[𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐀𝐥𝐟𝐚](t.me/so_alfaa)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
-{text = ' ❺', callback_data="/help"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12831,22 +12841,22 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ➊', callback_data="/help3"},
+{text = '⌯ اوامر الوضع ⌯', callback_data="/help3"},
 },
 {
-{text = ' ❷ ', callback_data="/help4"},
+{text = '⌯ اوامر التنزيل والرفع ⌯', callback_data="/help4"},
 
-{text = '❸ ', callback_data="/help5"},
+{text = '⌯ اوامر المطورين ⌯', callback_data="/help5"},
 },
 {
-{text = ' ❹ ', callback_data="/help6"},
+{text = '⌯ اوامر الأعضاء ⌯', callback_data="/help6"},
 
-{text = ' ❺', callback_data="/help7"},
+{text = '⌯ اوامر التسليه ⌯', callback_data="/help7"},
 },
 {
-{text = ' ❻ ', callback_data="/help1"},
+{text = '⌯ قفل و القفل ⌯', callback_data="/help1"},
 
-{text = ' ❼ ', callback_data="/help2"},
+{text = '⌯ تعطيل و تفعيل ⌯', callback_data="/help2"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
