@@ -2793,7 +2793,7 @@ local Text = [[
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '𝙳𝙴𝚅 𝚆𝙰𝚉𝙴𝚁 𝙴𝙻𝙰𝚉𝙼𝙰',url="t.me/DV_MI_NA2"},{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},  ,  
+{{text = '𝙳𝙴𝚅 𝚆𝙰𝚉𝙴𝚁 𝙴𝙻𝙰𝚉𝙼𝙰',url="t.me/DV_MI_NA2"},{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},
 {{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},  
 {{text = 'AＶＡＴＡＲ', url="t.me/SO_AVT"}},  
 {{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/UU_MI_2_BOT?startgroup=start"}},
