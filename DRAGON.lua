@@ -2780,29 +2780,26 @@ end
 
 
 
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == '"' then
-local Text =[[
-╔≂≂≂≂≂≂≂≂≂≂≂𝐑𝐢𝐬𝐤≂≂≂≂≂≂≂≂≂≂≂╗
-✰ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐢𝐬𝐤, 
-✰ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 
-✰ 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎
-╚≂≂≂≂≂≂≂≂≂≂≂𝐑𝐢𝐬𝐤≂≂≂≂≂≂≂≂≂≂≂╝
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-
-{
-{text = ' 𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧 ', url = "https://t.me/AAHMEED11"},{text = '𝐃𝐞𝐯 𝐇𝐚𝐢𝐯𝐞𝐞𝐧 ', url = "https://t.me/H_I_v_e_e_n101"},
-},
-{
-{text = '𝐓𝐰𝐥 𝐑𝐢𝐬𝐤', url = "https://t.me/E_H_M_BOT"},
-},
-{
-{text = ' 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤 ', url = "https://t.me/NIU_C"},
-},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == 'السورس' or text == 'سورس' then  
+local Text = [[  
+╭──── ● ☆ ● ────╮
+☆
+● 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆   
+● 𝐚𝐯𝐭𝐚𝐫 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 
+● 𝒐𝒏 𝒕𝒆𝒍𝒆𝒆𝒈𝒓𝒂𝒎 
+☆
+╰──── ● ☆ ● ────╯
+⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
+{{text = '𝙳𝙴𝚅 𝚆𝙰𝚉𝙴𝚁 𝙴𝙻𝙰𝚉𝙼𝙰',url="t.me/DV_MI_NA2"},{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},  ,  
+{{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},  
+{{text = 'AＶＡＴＡＲ', url="t.me/SO_AVT"}},  
+{{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/UU_MI_2_BOT?startgroup=start"}},
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_AVT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
