@@ -2714,20 +2714,21 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
 local Text = [[ 
-[╔≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╗
+╔≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╗
 ✰ 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐒𝐨𝐮𝐫𝐜𝐞 𝐑𝐨𝐨𝐳, 
 ✰ 𝐓𝐡𝐞 𝐁𝐞𝐬𝐭 𝐈𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐨𝐥𝐥𝐨𝐰 𝐭𝐡𝐞 
 ✰ 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 𝐛𝐮𝐭𝐭𝐨𝐧𝐬 𝐟𝐨𝐫 𝐦𝐨𝐫𝐞.☟︎︎︎
-╚≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╝](t.me/SO_ADR)
+╚≂≂≂≂≂≂≂❲𝐑𝐎𝐎𝐙❳≂≂≂≂≂≂≂╝
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𝐃𝐞𝐯 𝐕𝐨𝐝𝐞𝐤𝐚',url="t.me/DV_Vo_Dk_A1"}}, 
-{{text = '𝐃𝐞𝐯 𝐄𝐥𝐰𝐚𝐳𝐞𝐫',url="t.me/DV_MI_NA2"}}, 
-{{text = '𝐃𝐞𝐯 𝐏𝐢𝐤𝐚𝐭𝐜𝐡𝐨',url="t.me/DV_PiK_ATC_HO"}}, 
+{{text = '𝐔𝐬𝐞𝐫 𝐑𝐨𝐨𝐳', url="t.me/US_ROZ"}},
+{{text = '𝐃𝐞𝐯 𝐊𝐞𝐦𝐨',url="t.me/K_E_M_O1"},{text = '𝐃𝐞𝐯 𝐌𝐚𝐫𝐭𝐞𝐧',url="t.me/I_C_X"}},
+{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"},{text = '𝐓𝐰𝐥 𝐑𝐨𝐨𝐳',url="t.me/E_H_M_BOT"}},
+{{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐨𝐨𝐳', url="t.me/SO_ROZ"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ADR&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROZ&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -13481,7 +13482,7 @@ if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱- 𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- 𝗖𝗛 @SO_ROZ\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- ??𝗛  @SO_ROZ\n')
+send(msg.chat_id_, msg.id_,'[\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n ??🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- ??𝗛  @SO_ROZ\n')
 else
 send(msg.chat_id_, msg.id_, '\n ღ الصوره ~⪼ ليس لديك صور في حسابك'..'[\n🇧🇱-𝒖𝒔𝒆𝒓  '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-??𝒅 '..msg.sender_user_id_..'\n🇧🇱- 𝗖𝗛 @SO_ROZ\n')
 end 
