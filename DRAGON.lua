@@ -2791,12 +2791,12 @@ local Text = [[
 keyboard = {}   
 keyboard.inline_keyboard = {  
 {{text = 'ᴀʜᴍᴇᴅ ʙᴀɴᴅᴀ',url="t.me/uu_1_p"},{text = 'ᴀʜᴍᴇᴅ ᴋᴀsᴀʜᴀ',url="t.me/MR_AAS"}},
-{{text = 'ᴅᴇᴠ ᴍᴀᴅɪsᴏɴ',url="t.me/AAHMEED11}},  
+{{text = 'ᴅᴇᴠ ᴍᴀᴅɪsᴏɴ',url="t.me/AAHMEED11"}},  
 {{text = 'ᴄʜᴀɴɴᴇʟ ᴀʟғᴀ',url="t.me/so_alfaa"},{text = 'ғᴀᴄᴛᴏʀʏ ᴀʟғᴀ',url="t.me/A_L_VV_BOT"}},
 {{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/M_A_DD_BOT?startgroup=start"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_AVT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/so_alfaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 
