@@ -2717,7 +2717,7 @@ local Text = [[
 ╭──── ● ☆ ● ────╮
 ☆
 ● 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆   
-● 𝐚𝐯𝐭𝐚𝐫 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 
+● 𝒓𝒐𝒐𝒛 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆 
 ● 𝒐𝒏 𝒕𝒆𝒍𝒆𝒆𝒈𝒓𝒂𝒎 
 ☆
 ╰──── ● ☆ ● ────╯
@@ -2725,13 +2725,13 @@ local Text = [[
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
-{{text = '𝙳𝙴𝚅 𝚆𝙰𝚉𝙴𝚁 𝙴𝙻𝙰𝚉𝙼𝙰',url="t.me/DV_MI_NA2"}},  
-{{text = '𝙳𝙴𝚅 𝚅𝙾𝙳𝙴𝙺𝙰',url="t.me/DV_Vo_Dk_A1"}},  
-{{text = 'AＶＡＴＡＲ', url="t.me/SO_AVT"}},  
-{{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/UU_MI_2_BOT?startgroup=start"}},
+{{text = '𝐃𝐞𝐯 𝐊𝐞𝐦𝐨',url="t.me/K_E_M_O1"}},  
+{{text = '𝐃𝐞𝐯 𝐌𝐚𝐫𝐭𝐞𝐧',url="t.me/l_C_X"}},  
+{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐎𝐎𝐙', url="t.me/SO_ROZ"}},  
+{{text = 'اضـف الــبــوت لـمــجـمـوعـتـك',url="http://t.me/M_A_DD_BOT?startgroup=start"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_AVT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/SO_ROZ&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -9303,7 +9303,7 @@ local text =
 ' }\n'..' ღ  الايدي ← { '..idgp..
 ' }\n'..' ღ  الايدي بالصوره ← { '..idph..
 ' }\n'..' ღ  الرفع ← { '..setadd..
-' }\n'..' ღ  الحظر ← { '..banm..' }\n\nღ═───═𝐑𝐎𝐎𝐙  ═───═ღ\n ღ قناة سورس رووز ↓\n [ ♬ ?? 𝐒𝐎𝐔𝐑𝐂𝐄 ??𝐎𝐎𝐙   𓆪 ♬](t.me/SO_ROZ) \n'
+' }\n'..' ღ  الحظر ← { '..banm..' }\n\nღ═───═𝐑𝐎𝐎𝐙  ═───═ღ\n ღ قناة سورس رووز ↓\n [ ♬ 𓆩 𝐒𝐎𝐔𝐑𝐂𝐄 ??𝐎𝐎𝐙   𓆪 ♬](t.me/SO_ROZ) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -12720,7 +12720,7 @@ Msᴀɢ ~ #msgs
 𝒖𝒔𝒆𝒓𓂅 #username 𓍯
 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯
 𝒊𝒅 𓂅 #id 𓍯
-𓂅 𝗖?? - @SO_ROZ 💞.
+𓂅 𝗖𝗛 - @SO_ROZ 💞.
 ]],
 [[
 - ♬ 𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -13485,7 +13485,7 @@ if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱- 𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- 𝗖𝗛 @SO_ROZ\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n ??🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- ??𝗛  @SO_ROZ\n')
+send(msg.chat_id_, msg.id_,'[\n🇧🇱-𝒖𝒔𝒆𝒓   '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n ??🇱-𝒔𝒕𝒂𝒕𝒔  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n 🇧🇱-𝒊𝒅 '..msg.sender_user_id_..'\n🇧🇱- ????  @SO_ROZ\n')
 else
 send(msg.chat_id_, msg.id_, '\n ღ الصوره ~⪼ ليس لديك صور في حسابك'..'[\n🇧🇱-𝒖𝒔𝒆𝒓  '..username..'\n 🇧🇱-𝒎𝒔𝒈𝒔  '..Msguser..'\n 🇧🇱-??𝒅 '..msg.sender_user_id_..'\n🇧🇱- 𝗖𝗛 @SO_ROZ\n')
 end 
