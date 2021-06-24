@@ -2760,19 +2760,26 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/M_S_U1/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
-local Text = [[
- ☾ اهلا بك في سورس الريسك الجمدان
- لو عايز بوت بأسعار منسبه وبوت مميز كلمني ☾ 
+if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'بوت مين' or text == '"' then
+local Text =[[
+
+
+𖤛- [اهلا بك في سورس الفا الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني ](t.me/so_alfaa) 𖤛
+
+
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"},{{text = '𝐃𝐞𝐯 𝐃𝐞𝐛𝐨',url="t.me/liUI5I"}},
-{{text = '𝐓𝐰𝐚𝐬𝐥 𝐑𝐢𝐬𝐤', url="t.me/E_H_M_BOT"}},{{text = '𝐅𝐚𝐜𝐭𝐨𝐫𝐲 𝐑𝐢𝐬𝐤',url="t.me/A_L_VV_BOT"}},
-{{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐈𝐒𝐊',url="t.me/NIU_C"}}, 
+
+{
+{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧', url = "https://t.me/AAHMEED11"},
+},
+{
+{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤', url = "https://t.me/NIU_C"},
+},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/so_alfaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'ماديسون' or text == 'المبرمج ماديسون' or text == 'ماديسون مبرمج السورس' or text =='الهقر' then
@@ -12592,12 +12599,12 @@ local List = {
 𓄼🇪🇭 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇭 𝒊𝒅 : #id ‌‌‏⚚
 𓄼🇪🇭 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
-𓄼🇪🇭 𝑴??𝒈𝒔 : #msgs 𓆊
+𓄼🇪🇭 𝑴𝒔𝒈𝒔 : #msgs 𓆊
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝒖𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
-➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸💞.
+➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸??.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
 ]],
 [[
