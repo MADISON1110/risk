@@ -64,7 +64,7 @@ token = database:get(id_server..":token"),
 SUDO = database:get(id_server..":SUDO:ID"),
 UserName = database:get(id_server..":SUDO:USERNAME"),
  }
-create(config, "./Bkar.lua")   
+create(config, "./madison.lua")   
 end 
 create_config_auto()
 token = database:get(id_server..":token")
@@ -123,7 +123,7 @@ file:write(serialized)
 file:close() 
 end 
 local load_redis = function()  
-local f = io.open("./Bkar.lua", "r")  
+local f = io.open("./madison.lua", "r")  
 if not f then   
 AutoSet()  
 else   
@@ -131,7 +131,7 @@ f:close()
 database:del(id_server..":token")
 database:del(id_server..":SUDO:ID")
 end  
-local config = loadfile("./Bkar.lua")() 
+local config = loadfile("./madison.lua")() 
 return config 
 end 
 _redis = load_redis()  
@@ -144,7 +144,7 @@ print([[
 > CH › @NIU_C
 ~> DEVELOPER › @B_l_A_1 
 ]])
-sudos = dofile("./Bkar.lua") 
+sudos = dofile("./madison.lua") 
 SUDO = tonumber(sudos.SUDO)
 sudo_users = {SUDO}
 bot_id = sudos.token:match("(%d+)")  
@@ -1092,7 +1092,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ❨ 𝐌 𝐀 𝐃 𝐈 𝐒 𝐎 𝐍 ♫︎ ❩ ', url="t.me/AAHMEED11}}, 
+{{text = ' ❨ 𝐌 𝐀 𝐃 𝐈 𝐒 𝐎 𝐍 ♫︎ ❩ ', url="t.me/AAHMEED11"}}, 
 {{text = '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 𝐑𝐢𝐬𝐤',url="t.me/NIU_C"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
