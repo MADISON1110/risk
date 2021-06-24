@@ -12515,7 +12515,7 @@ send(msg.chat_id_, msg.id_,'ماديسون مبرمج السورس @AAHMEED11', 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = 1208165035, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 
-if text == "المبرمج ديبو" or text == 'االواد ديبو then 
+if text == "المبرمج ديبو" or text == 'االواد ديبو' then 
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," المبرمج ديبو لو حابب تتواصل معاه اليوزر اهو @liUI5I ", msg.id_, msg.id_, "md") 
@@ -14051,7 +14051,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n    ꙰☾•𝐮𝐬𝐞𝐫   '..username..'↝🇧🇷\n     ꙰☾•𝐦𝐬𝐠  '..Msguser..'↝🇧🇷\n     ꙰☾•𝐬𝐭𝐚  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'↝🇧🇷\n     ꙰☾•𝐢𝐝 '..msg.sender_user_id_..'↝🇧🇷\n    ꙰☾•𝗖𝗛@NIU_C↝🇧🇷\n')
+send(msg.chat_id_, msg.id_,'[\n    ꙰☾•𝐮𝐬𝐞𝐫   '..username..'↝🇧🇷\n     ꙰☾•𝐦𝐬𝐠  '..Msguser..'↝🇧🇷\n     ꙰☾•𝐬𝐭𝐚  '..Rutba(msg.sender_user_id_,msg.chat_id_)..'↝??🇷\n     ꙰☾•𝐢𝐝 '..msg.sender_user_id_..'↝🇧🇷\n    ꙰☾•𝗖𝗛@NIU_C↝🇧🇷\n')
 end
 end
 
@@ -14853,7 +14853,7 @@ local Teext =[[
 ✪❯─────「𝗥𝗶??𝗸」─────❮✪
 قفل + فتح ← الامر… 
 ??← { بالتقيد ، بالطرد ، بالكتم }
-✪❯─────「𝗥𝗶??𝗸」─────❮✪
+✪❯─────「𝗥𝗶𝘀𝗸」─────❮✪
 ☾الروابط
 ☾المعرف
 ☾التاك
