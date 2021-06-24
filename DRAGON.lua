@@ -2755,6 +2755,7 @@ keyboard.inline_keyboard = {
 {{text = '𝐃𝐞𝐯 𝐌𝐚𝐝𝐢𝐬𝐨𝐧',url="t.me/AAHMEED11"}}, 
 {{text = '𝐃𝐞𝐯 𝐃𝐞𝐛𝐨',url="t.me/liUI5I"}}, 
 {{text = '𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐈𝐒𝐊', url="t.me/NIU_C"}}, 
+{{text = 'اضـف الـبـوت لـمـجـمـوعـتك', url="https://t.me/M_A_DD_BOT?startgroup=new"}},  
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/NIU_C&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -12604,7 +12605,7 @@ local List = {
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸💞.
 ➞: 𝒖𝒔𝒆𝒓𓂅 #username 𓍯➸💞.
-➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸??.
+➞: 𝒎??𝒈𝒆𓂅 #msgs 𓍯➸??.
 ➞: 𝒊𝒅 𓂅 #id 𓍯➸💞.
 ]],
 [[
@@ -13066,7 +13067,7 @@ local List = {
 • 𝗖𝗛 - @NIU_C 💞.
 ]],
 [[
-🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
+🇪🇬 - 𝄬 ??ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
 🇪🇬 - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
@@ -13512,7 +13513,7 @@ Msᴀɢ ~ #msgs
 
 • 🖤 | 𝑴𝑺𝑮 : #msgs
 
-• 🖤 | 𝗖𝗛 - @NIU_C ☾
+• 🖤 | ??𝗛 - @NIU_C ☾
 ]],
 [[
 • USE 𖦹 #username 
