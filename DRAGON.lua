@@ -1115,7 +1115,7 @@ if text == 'الاصدار ' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ღ اصدار سورس اوليانو { s: 6.7}')
 end
-if text == 'عبدو' or text == 'المبرمج عبدو' or text == 'عبدو مبرمج السورس' or text =='عبدو خيري' then
+if text == 'مالك السورس' or text == 'المبرمج عبدو' or text == 'عبدو مبرمج السورس' or text =='عبدو خيري' then
 local Text =[[
 
 
@@ -2791,17 +2791,24 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABCDABCDL&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'اوليانو' or text == 'سورس' or text == 'السورس' or text == 'source' or text == 'يا سورس' or text == 'OLIANO' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-♬ اهلا بك في سورس اوليانو لو عايز بوت بأسعار منسبه وبوت مميز كلمني
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = {
+if text == 'السورس' or text == 'سورس' or text == 'اوليانو' then  
+local Text = [[  
+╭──── ● ☆ ● ────╮
+☆
+𝒘𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒔𝒐𝒖𝒓𝒄𝒆   
+𝒐𝒍𝒊𝒂𝒏𝒐 𝒕𝒉𝒆 𝒃𝒆𝒔𝒕 𝒔𝒐𝒖𝒓𝒄𝒆    
+𝒐𝒏 𝒕𝒆𝒍𝒆𝒆𝒈𝒓𝒂𝒎 
+☆
+╰──── ● ☆ ● ────╯
+⍟  𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 
+]]  
+keyboard = {}   
+keyboard.inline_keyboard = {  
 {{text = '☼︎𝐷𝑒𝑣 𝐴𝑏𝑑𝑜☼︎',url="t.me/Aashekelsafar"},{text = '☼︎𝐷𝑒𝑣 𝐽𝑎𝑘𝑠𝑜𝑛☼︎',url="t.me/JAXSO0N"}},
 {{text = '  ❨ 𝑺𝑶𝑼𝑹𝑪𝑬 𝑶𝑳𝑰𝑨𝑵𝑶 ❩ ',url="https://t.me/ABCDABCDL"}}, 
-}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABCDABCDL&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+}  
+local msg_id = msg.id_/2097152/0.5  
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/so_alfaa&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'عبدو' or text == 'المبرمج عبدو' or text == 'عبدو مبرمج السورس' or text == 'عبدو خيري' then
