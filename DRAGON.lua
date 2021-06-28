@@ -140,7 +140,7 @@ print([[
 > CH › @SO_ROGEN
 ~> DEV› @G_W_P 
 ~> DEV › @I_C_X
-~> DEV › @M_A_G_K
+~> DEV › M_A_G_K
 ]])
 SUDOs = dofile("./kabos.lua") 
 SUDO = tonumber(SUDOs.SUDO)
@@ -2685,10 +2685,10 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 𝚊𝚕𝚖𝚊𝚐𝚔 , url="t.me/M_A_G_K"}},
-{{text = 𝙼𝚊𝚛𝚝𝚎𝚗 ,url="t.me/I_C_X"}}, 
-{{text = 𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜 ,url="t.me/G_W_P"}}, 
-{{text = 𝚜𝚘𝚞𝚛𝚎𝚌𝚎 𝚛𝚘𝚘𝚐𝚎𝚗 , url="t.me/SO_ROGEN"}}, 
+{{text = '𝚊𝚕𝚖𝚊𝚐𝚔' , url="t.me/M_A_G_K"}},
+{{text = '𝙼𝚊𝚛𝚝𝚎𝚗' ,url="t.me/I_C_X"}}, 
+{{text = '𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜' ,url="t.me/G_W_P"}}, 
+{{text = '𝚜𝚘𝚞𝚛𝚎𝚌𝚎 𝚛𝚘𝚘𝚐𝚎𝚗' , url="t.me/SO_ROGEN"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/SO_ROGEN&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2702,7 +2702,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜',url="t.me/G_W_P"}},
-{{text =  𝚝𝚊𝚠𝚊𝚜𝚘𝚕 ,url="t.me/G_W_P_BOT"}}, 
+{{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/G_W_P_BOT"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2718,8 +2718,8 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜 , url="t.me/G_W_P"}}, 
-{{text =  𝚝𝚊𝚠𝚊𝚜𝚘𝚕 ,url="t.me/G_W_P_BOT"}}, 
+{{text = '𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜' , url="t.me/G_W_P"}}, 
+{{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/G_W_P_BOT"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/G_W_P&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2736,8 +2736,8 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 𝚖𝚊𝚛𝚝𝚎𝚗 , url="t.me/I_C_X"}},
-{{text =  𝚝𝚊𝚠𝚊𝚜𝚘𝚕 ,url="t.me/I_C_X_BOT"}}, 
+{{text = '𝚖𝚊𝚛𝚝𝚎𝚗' , url="t.me/I_C_X"}},
+{{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/I_C_X_BOT"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/I_C_X&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2750,11 +2750,11 @@ local Text = [[
 
                        ☆ ملك سورس روجين☆      
              
-  ╰──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╯ ](t.me/@M_A_G_K)
+  ╰──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╯ ](t.me/M_A_G_K)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 𝚊𝚕𝚖𝚊𝚐𝚔 , url="t.me/M_A_G_K"}},
+{{text = '𝚊𝚕𝚖𝚊𝚐𝚔' , url="t.me/M_A_G_K"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/M_A_G_K&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8234,7 +8234,7 @@ local text =
 ' }\n'..' 🪐  الردود » { '..rdmder..
 ' }\n'..' 🪐  الردود العامه » { '..rdSUDO..
 ' }\n'..' 🪐  الايدي » { '..idgp..
-' }\n'..' 🪐  الايدي بالصوره » { '..idph..
+' }\n'..' ??  الايدي بالصوره » { '..idph..
 ' }\n'..' 🪐  الرفع » { '..setadd..
 -- ' }\n'..' 🪐  الحظر » { '..banm..' }\n\n┄─━━𝚛𝚘𝚘𝚐𝚎𝚗━━─┄\n 🪐 قناة سورس روجين ↓\n [⌯𝚜𝚘𝚞𝚛𝚌𝚎 𝚛𝚘𝚘𝚐𝚎𝚗⌯](t.me/SO_ROGEN) \n'
 send(msg.chat_id_, msg.id_,text)     
@@ -11075,7 +11075,7 @@ local List = {
 𝟓 𝟔 𖡻 #id  ࿇🦄
 ]],
 [[
-金 - 𝓾𝓼𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
+金 - ??𝓼𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
 金 - 𝓼𝓽𝓪𝓼𝓽  . #stast ⸙ 
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
