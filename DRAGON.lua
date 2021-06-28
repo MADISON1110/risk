@@ -2708,55 +2708,74 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text ==  'محمد'  or text ==  'كابوس'  or text ==  'مبرمج السورس'  or text ==  'الكابوس' then 
-local Text = [[ 
-[ ╭──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╮
+if text == 'كابوس' or text == 'محمد' or text == 'مبرمج السورس' or text == 'الكابوس' then
+local Text =[[
 
-                 ☆ مبرمج سورس روجين☆     
-             
-  ╰──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╯ ](t.me/G_W_P)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜' , url="t.me/G_W_P"}}, 
-{{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/G_W_P_BOT"}}, 
-} 
+
+للتـؤٲصـل مـع مـبـرأمـج سـؤرس رؤجـيـن 
+ٲتبـعع ٲلٲزرٲر ٲلٲتـيـه 🪐
+
+
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝚍𝚎𝚟 𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜', url = "https://t.me/G_W_P"},
+},
+{
+{text = '𝚜𝚘𝚞𝚛𝚌𝚎 𝚛𝚘𝚘𝚐𝚎𝚗', url = "https://t.me/SO_ROGEN"},
+},
+}
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G_W_P&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/G_W_P&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
-if text == 'مارتن' or text ==  'marten' or text ==  'مطور السورس'  or text == 'قلب الكابوس' then 
-local Text = [[ 
-[ ╭──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╮
+if text == 'مارتن' or text == 'مطور السورس' or text == 'مارتن القمد' or text == 'قلب الكابوس' then
+local Text =[[
 
-                      ☆ مطور سورس روجين☆     
-             
-  ╰──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╯ ](t.me/I_C_X)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝚖𝚊𝚛𝚝𝚎𝚗' , url="t.me/I_C_X"}},
-{{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/I_C_X_BOT"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
+
+للتـؤٲصـل مـع مـطـؤر سـؤرس رؤجـيـن 
+ٲتبـعع ٲلٲزرٲر ٲلٲتـيـه 🪐
+
+
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝚍𝚎𝚟 𝚖𝚊𝚛𝚝𝚎𝚗', url = "https://t.me/I_C_X"},
+},
+{
+{text = '𝚜𝚘𝚞𝚛𝚌𝚎 𝚛𝚘𝚘𝚐𝚎𝚗', url = "https://t.me/SO_ROGEN"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/I_C_X&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
-if text == 'كريم' or text == 'الماجيك' or text ==  'ملك التلجرام'  or text == 'مرات الكابوس' then 
-local Text = [[ 
-[ ╭──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╮
+if text == 'كريم' or text == 'ملك السورس' or text == 'كريم الماجيك' or text =='مرات الكابوس' then
+local Text =[[
 
-                       ☆ ملك سورس روجين☆      
-             
-  ╰──── 𝚛𝚘𝚘𝚐𝚎𝚗 ────╯ ](t.me/M_A_G_K)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𝚊𝚕𝚖𝚊𝚐𝚔' , url="t.me/M_A_G_K"}},
-} 
-local msg_id = msg.id_/2097152/0.5 
+
+للتـوٲصـل مـع مـلك سـؤرس رؤجـيـن 
+ٲتبـعع ٲلٲزرٲر ٲلٲتـيـه 💗✨
+
+
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+
+{
+{text = '𝚍𝚎𝚟 𝚊𝚕𝚖𝚊𝚐𝚒𝚔', url = "https://t.me/M_A_G_K"},
+},
+{
+{text = '𝚜𝚘𝚞𝚛𝚌𝚎 𝚛𝚘𝚘𝚐𝚎𝚗' , url = "https://t.me/SO_ROGEN"},
+},
+}
+local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/M_A_G_K&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
