@@ -1143,7 +1143,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text =  𝚝𝚊𝚠𝚊𝚜𝚘𝚕 ,url="t.me/G_W_P_BOT"}}, 
+{{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/G_W_P_BOT"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -11065,7 +11065,7 @@ local List = {
 ]],
 [[
 - 🇨🇰 𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆 . #username 𖣂.
-- 🇨🇰 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
+- 🇨🇰 𝒔𝒕𝒂𝒔?? . #stast 𖣂.
 - 🇨🇰 𝒊𝒅 . #id 𖣂.
 - 🇨🇰 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇨🇰 𝒎𝒔𝒈?? . #msgs 𖣂.
