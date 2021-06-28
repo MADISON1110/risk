@@ -2721,8 +2721,8 @@ keyboard.inline_keyboard = {
 {{text = '𝚎𝚕𝚔𝚊𝚋𝚘𝚘𝚜' , url="t.me/G_W_P"}}, 
 {{text = '𝚝𝚊𝚠𝚊𝚜𝚘𝚕' ,url="t.me/G_W_P_BOT"}}, 
 } 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/G_W_P&caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/G_W_P&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -10547,7 +10547,7 @@ local edit = tonumber(database:get(bot_id..'edits'..msg.chat_id_..result.id_) or
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,' 🪐 ايديه ~⪼('..iduser..')\n 🪐 معرفه ~⪼('..username..')\n 🪐 رتبته ~⪼('..rtp..')\n 🪐 تعديلاته ~⪼('..edit..')\n 🪐 نقاطه ~⪼('..NUMPGAME..')\n 🪐 جهاته ~⪼('..Contact..')\n 🪐 رسائله ~⪼('..Msguser..')')
+send(msg.chat_id_, msg.id_,' ?? ايديه ~⪼('..iduser..')\n 🪐 معرفه ~⪼('..username..')\n 🪐 رتبته ~⪼('..rtp..')\n 🪐 تعديلاته ~⪼('..edit..')\n 🪐 نقاطه ~⪼('..NUMPGAME..')\n 🪐 جهاته ~⪼('..Contact..')\n 🪐 رسائله ~⪼('..Msguser..')')
 end,nil)
 else
 send(msg.chat_id_, msg.id_,' 🪐 المعرف غير صحيح ')
@@ -11075,7 +11075,7 @@ local List = {
 𝟓 𝟔 𖡻 #id  ࿇🦄
 ]],
 [[
-金 - 𝓾𝓼𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
+金 - 𝓾??𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
 金 - 𝓼𝓽𝓪𝓼𝓽  . #stast ⸙ 
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
@@ -11889,7 +11889,7 @@ end
 end
 if text == "بتحبو" or text == "بتحب دا" then
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"طبعا دا قلبي ♥🙄"," هحب فيه اي دا??🙂","تؤ محصلش😹"}
+local texting = {"طبعا دا قلبي ♥🙄"," هحب فيه اي دا😹🙂","تؤ محصلش😹"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
