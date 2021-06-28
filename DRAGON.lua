@@ -1153,7 +1153,7 @@ database:setex(bot_id..'Set:Name:Bot'..msg.sender_user_id_,300,true)
 send(msg.chat_id_, msg.id_," 🪐 ارسل اليه الاسم الان ")
 return false
 end
-if text ==  المطور  or text ==  مطور  then
+if text == 'المطور' or text == 'مطور' then
 tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
  
  local msg_id = msg.id_/2097152/0.5
