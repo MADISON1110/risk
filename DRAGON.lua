@@ -1154,18 +1154,15 @@ send(msg.chat_id_, msg.id_," 🪐 ارسل اليه الاسم الان ")
 return false
 end
 if text == 'المطور' or text == 'مطور' then
+local TEXT_SUDO = database:get(bot_id..'TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
- 
- local msg_id = msg.id_/2097152/0.5
-local Text = [[
- المطور
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {{{text =     ⁽ ..result.first_name_.. ₎   ,url="t.me/"..result.username_}},}
-https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/ ..result.username_.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
-
-
+end
 end
 if text == 'الاحصائيات' and DevSoFi(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
@@ -8364,7 +8361,7 @@ send(msg.chat_id_, msg.id_," 🔴 تم تعطيل الرابط")
 return false end
 end
 
-if text ==  المطور  or text ==  مطور  then
+if text == 'المطور' or text == 'مطور' then
 tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
  
  local msg_id = msg.id_/2097152/0.5
@@ -8372,8 +8369,8 @@ local Text = [[
  المطور
 ]]
 keyboard = {} 
-keyboard.inline_keyboard = {{{text =     ⁽ ..result.first_name_.. ₎   ,url="t.me/"..result.username_}},}
-https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=https://t.me/ ..result.username_.. &caption=  .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+keyboard.inline_keyboard = {{{text = '  𖣘 ⁽'..result.first_name_..'₎ 𖣘 ',url="t.me/"..result.username_}},}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
 
 
@@ -11065,7 +11062,7 @@ local List = {
 ]],
 [[
 - 🇨🇰 𝒖𝒔𝒆𝒓𝒏𝒂𝒎𝒆 . #username 𖣂.
-- 🇨🇰 𝒔𝒕𝒂𝒔?? . #stast 𖣂.
+- 🇨🇰 𝒔𝒕𝒂𝒔𝒕 . #stast 𖣂.
 - 🇨🇰 𝒊𝒅 . #id 𖣂.
 - 🇨🇰 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇨🇰 𝒎𝒔𝒈?? . #msgs 𖣂.
