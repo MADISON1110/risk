@@ -2784,7 +2784,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '☼︎𝐷𝑒𝑣 𝑏𝑜𝑦𝑘𝑎☼︎',url="t.me/ha_rr_y_ha_ma"}},{{text = '☼︎𝐷𝑒𝑣 𝑡𝑎𝑘𝑦☼︎',url="t.me/Dad_taky"}},  
+{{text = '☼︎𝐷𝑒𝑣 𝑏𝑜𝑦𝑘𝑎☼︎',url="t.me/ha_rr_y_ha_ma"},{text = '☼︎𝐷𝑒𝑣 𝑡𝑎𝑘𝑦☼︎',url="t.me/Dad_taky"}},  
 {{text = '❨ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ❩ ',url="t.me/frawla2021"}}, 
 {{text = 'اضــف الـبـوت لـمـجـمـوعـتـك', url="https://t.me/M_A_DD_BOT?startgroup=new"}},  
 } 
