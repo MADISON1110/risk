@@ -681,7 +681,7 @@ end
 function Addmp3(msg,chat,kkl,ffrr)
 local eer = json:decode(https.request('https://api.telegram.org/bot'.. token..'/getfile?file_id='..kkl)) 
 download_to_file('https://api.telegram.org/file/bot'..token..'/'..eer.result.file_path,ffrr) 
-sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼 ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬")  
+sendAudio(msg.chat_id_,msg.id_,'./'..ffrr,"🎼 ♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬")  
 os.execute('rm -rf ./'..ffrr) 
 end
 function Addsticker(msg,chat,Sd,rre)
@@ -2771,7 +2771,7 @@ end
 end,nil)   
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then 
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'سورس' then 
 local Text = [[ 
 ╭──── ● ☆ ● ────╮
 ☆
@@ -2784,8 +2784,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '☼︎𝐷𝑒𝑣 𝑏𝑜𝑦𝑘𝑎☼︎',url="t.me/ha_rr_y_ha_ma"}}, 
-{{text = '☼︎𝐷𝑒𝑣 𝑡𝑎𝑘𝑦☼︎',url="t.me/Dad_taky"}}, 
+{{text = '☼︎𝐷𝑒𝑣 𝑏𝑜𝑦𝑘𝑎☼︎',url="t.me/ha_rr_y_ha_ma"}},{{text = '☼︎𝐷𝑒𝑣 𝑡𝑎𝑘𝑦☼︎',url="t.me/Dad_taky"}},  
 {{text = '❨ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ❩ ',url="t.me/frawla2021"}}, 
 {{text = 'اضــف الـبـوت لـمـجـمـوعـتـك', url="https://t.me/M_A_DD_BOT?startgroup=new"}},  
 } 
@@ -9375,7 +9374,7 @@ local text =
 ' }\n'..' ღ  الايدي ← { '..idgp..
 ' }\n'..' ღ  الايدي بالصوره ← { '..idph..
 ' }\n'..' ღ  الرفع ← { '..setadd..
-' }\n'..' ღ  الحظر ← { '..banm..' }\n\nღ═───═𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈═───═ღ\n ღ قناة سورس فراوله ↓\n [ ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬](t.me/frawla2021) \n'
+' }\n'..' ღ  الحظر ← { '..banm..' }\n\nღ═───═𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈═───═ღ\n ღ قناة سورس فراوله ↓\n [ ♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬](t.me/frawla2021) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -11095,7 +11094,7 @@ if audios.Info == true then
 local Text ='ღتم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬.',url="t.me/frawla2021"}},
+{{text = '♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬.',url="t.me/frawla2021"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -14229,7 +14228,7 @@ local Text =[[
  ♬ مرحب بيك في الالعاب ♬ 
  اتبع الازرار إلى تحت في الاسفل ↓
 ღ═───═𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈═───═ღ
-[ ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬ ](t.me/frawla2021)
+[ ♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬ ](t.me/frawla2021)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14246,7 +14245,7 @@ keyboard.inline_keyboard = {
 {text = 'الاوامر🎯', callback_data="/help90"},
 },
 {
-{text = ' ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
+{text = ' ♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -15084,7 +15083,7 @@ keyboard.inline_keyboard = {
 {text = '𝐁𝐀𝐂𝐊 ♬ ', callback_data="/add"},
 },
 {
-{text = '♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
+{text = '♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -15156,7 +15155,7 @@ keyboard.inline_keyboard = {
 {text = ' القائمة الرئيسيه ', callback_data="/add"},
 },
 {
-{text = '♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
+{text = '♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -15186,7 +15185,7 @@ keyboard.inline_keyboard = {
 {text = ' القائمة الرئيسيه ', callback_data="/add"},
 },
 {
-{text = '♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
+{text = '♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -15225,7 +15224,7 @@ keyboard.inline_keyboard = {
 {text = '𝐁𝐀𝐂𝐊 ♬ ', callback_data="/add"},
 },
 {
-{text = '♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ 🇪??', url="t.me/frawla2021"},
+{text = '♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ 🇪??', url="t.me/frawla2021"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -15241,7 +15240,7 @@ local Teext =[[
  ♬ مرحب بيك في الالعاب ♬ 
  اتبع الازرار إلى تحت في الاسفل ↓
 ღ═───═𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈═───═ღ
-[ ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬ ](t.me/frawla2021)
+[ ♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬ ](t.me/frawla2021)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15258,7 +15257,7 @@ keyboard.inline_keyboard = {
 {text = 'الاوامر🎯', callback_data="/help90"},
 },
 {
-{text = ' ♬ 𝐒𝐎𝐔𝐑𝐂𝐄 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
+{text = ' ♬ 𝙎𝙊𝙐𝙍𝘾𝙀 𝙁𝘼𝙍𝙒𝙇𝘼 ❈ ♬', url="t.me/frawla2021"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
