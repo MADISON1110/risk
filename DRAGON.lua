@@ -11987,23 +11987,30 @@ local DRAGON_Msg = {
 send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
 return false
 end
-if text == "بوت" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'فراوله')
+if text == "بوت" or text == 'البوت' then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'فراوله')
 local DRAGON_Msg = {
-'اسمي  '..Namebot..' يا قلبي 🙈💗',
+'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🍭',
-'اسمي  '..Namebot..' يا قمر 🌝🌸',
+'اسمي  '..Namebot..' يعمري🌚🌹',
+'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
 'مقولت اسمي '..Namebot..' في اي 🙄',
-'عيون البوت اسمي '..Namebot..' يعمري🥺❤️',
-'اسمي  '..Namebot..' ياحياتي🥺♥️',
-'اسمي  '..Namebot..' يوتكه🥺❤️',
-'انا '..Namebot..' ينوحي🙀🥺',
+'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي  '..Namebot..' ياحياتي🧸♥️',
+'اسمي  '..Namebot..' يوتكه🙈🍑',
 }
-send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
-return false
+
+Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)]
+local function getpro(extra, result, success)
+if result.photos_[0] then
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,Namebot, msg.id_, msg.id_, "md")
+else
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md')
+end
+end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil)
 end
 
 if text == "اسمي"  then 
