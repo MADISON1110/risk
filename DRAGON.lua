@@ -2752,10 +2752,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text =  ⌯｟JABWA✯｠⌯ ,url="t.me/J_a_b_w_a"}},
-{{text =  ⌯｟PROFESER｠⌯ ,url="t.me/Professor512"}},
-{{text =  ⌯｟TWASL✰｠⌯ ,url="t.me/J_a_b_w_a_bot"}},
-{{text =  CHANNEL , url="t.me/Sadauam"}},
+{{text = ' ⌯｟JABWA✯｠⌯',url="t.me/J_a_b_w_a"}},
+{{text = '  ⌯｟PROFESER｠⌯',url="t.me/Professor512"}},
+{{text = '  ⌯｟TWASL✰｠⌯',url="t.me/J_a_b_w_a_bot"}},
+{{text = '  CHANNEL ',url="t.me/Sadauam"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/sssstaaar/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
