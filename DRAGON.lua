@@ -878,7 +878,7 @@ end
 if DevSoFi(msg) then
 local bl = '◉ مرحبا بك في اوامر المطور الجاهزه \n◉ [قناة السورس](t.me/Q_p_de)'
 local keyboard = {
-{'العزايزي','اوكسجين'},
+{'مبرمج السورس','مالك السورس'},
 {'ضع اسم للبوت'},
 {'اوامر الاذاعه','اوامر التفعيل','اوامر التعطيل'},
 {'الاحصائيات'},
@@ -912,7 +912,7 @@ keyboard = {
 {'تحليل','اسئله','مهنتي','نمله'},
 {'مستقبلي','لو خيروك','حساب الوزن'},
 {'كشف الكدب','نسبه الغباء','نسبه الحب'},
-{'زيكا','العزازيزي','اوكسجين'},
+{'مبرمج السورس'مالك السورس'},
 }
 end
 send_inline_key(msg.chat_id_, msg.id_, keyboard) 
@@ -3210,7 +3210,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q_p_de&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'تيراررا' or text == 'هقهقه' or text == 'وويويويوي' then
@@ -3238,7 +3238,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AAHMEED11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'هيفو' or text == 'مالك السورس' or text == 'هيفو الكبير' then
@@ -3252,7 +3252,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Q_Q_Q_D&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'نينيني' or text == 'ويوي' or text == 'تسرارار' then
