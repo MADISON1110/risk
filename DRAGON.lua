@@ -904,7 +904,7 @@ end
 if DevSoFi(msg) then
 local bl = '◉ مرحبا بك في اوامر المطور الجاهزه \n◉ [قناة السورس](t.me/ELKAEEB1)'
 local keyboard = {
-{'قناه السورس','السلطان'},
+{'مطور السورس','مالك السورس'},
 {'ضع اسم للبوت'},
 {'اوامر الاذاعه','اوامر التفعيل','اوامر التعطيل'},
 {'الاحصائيات'},
@@ -3233,7 +3233,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '◉ 𝐃𝐄𝐕 𝐃𝐀𝐍𝐈𝐄𝐋 ◉',url="t.me/ELKAEEB2"},{text = '◉ 𝐃𝐄𝐕 '𝐄𝐋𝐒𝐎𝐋𝐓𝐀𝐍 ◉',url="t.me/SUL_A_Q"}},
+{{text = '◉ 𝐃𝐄𝐕 𝐃𝐀𝐍𝐈𝐄𝐋 ◉',url="t.me/ELKAEEB2"}},
+{{text = '◉ 𝐃𝐄𝐕 '𝐄𝐋𝐒𝐎𝐋𝐓𝐀𝐍 ◉',url="t.me/SUL_A_Q"}},
 {{text = '𓆩⌯𝐒𝐎𝐔𝐑𝐂𝐄 𝐃𝐀𝐍𝐈𝐄𝐋⌯𓆪', url="t.me/ELKAEEB1"}}, 
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
