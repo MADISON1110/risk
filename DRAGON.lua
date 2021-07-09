@@ -3225,15 +3225,15 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, l
 end
 if text == 'سورس' or text == 'السورس' or text == 'ياسورس' then
 local Text = [[
-╔≂≂≂≂≂≂≂≂≂≂≂𝐃𝐀𝐍𝐈𝐄𝐋≂≂≂≂≂≂≂≂≂≂≂╗
+╔≂≂≂≂≂≂≂≂≂𝐃𝐀𝐍𝐈𝐄𝐋≂≂≂≂≂≂≂≂≂╗
 ⊰ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙳𝙰𝙽𝙸𝙴𝙻
 ⊰ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝙴𝙶 𝙻𝚄𝙰 𝚂𝙾𝚄𝚁𝙲𝙴
 ⊰  𝙸𝙽 𝚃𝙴𝙻𝙶𝚁𝙰𝙼 𐄬
-╚≂≂≂≂≂≂≂≂≂≂≂𝐃𝐀𝐍𝐈𝐄𝐋≂≂≂≂≂≂≂≂≂≂≂╝
+╚≂≂≂≂≂≂≂≂≂𝐃𝐀𝐍𝐈𝐄𝐋≂≂≂≂≂≂≂≂≂╝
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '◉ 𝐃𝐄𝐕 𝐃𝐀𝐍𝐈𝐄𝐋 ◉',url="t.me/ELKAEEB2"},{text = '◉ 𝐃𝐄𝐕 𝐄𝐋𝐒𝐎𝐋𝐓𝐀𝐍 ◉',url="t.me/SUL_A_Q"}},
+{{text = '𝐃𝐄𝐕 𝐃𝐀𝐍𝐈𝐄𝐋',url="t.me/ELKAEEB2"},{text = '𝐃𝐄𝐕 𝐄𝐋𝐒𝐎𝐋𝐓𝐀𝐍',url="t.me/SUL_A_Q"}},
 {{text = '𓆩⌯𝐒𝐎𝐔𝐑𝐂𝐄 𝐃𝐀𝐍𝐈𝐄𝐋⌯𓆪', url="t.me/ELKAEEB1"}}, 
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
@@ -3321,7 +3321,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/MADI_PICK/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == "هعععع" then
@@ -7973,7 +7973,7 @@ send(msg.chat_id_, msg.id_, ' ◉ تم تنزيل جميع االاكساس')
 end
 if text == ("تاك للاكساس") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n ◉ قائمة كساس الجروب \n◤━───━𝑬𝑳𝑴𝑼𝑺𝑳????━───━◥\n"
+t = "\n ◉ قائمة كساس الجروب \n◤━───━𓆩⌯𝐒𝐎𝐔𝐑𝐂𝐄 𝐃𝐀𝐍𝐈𝐄𝐋⌯𓆪━───━◥\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
